@@ -3,7 +3,7 @@
 ## Get the value of the matrix
 ## Set the value of the inverse of the matrix
 ## Get the value of the inverse of the matrix
-## And stores the inverse of the matrix in matrix variable called m
+## And stores the inverse of the matrix in matrix variable called invMat
 makeCacheMatrix <- function(x = matrix()) {
         invMat <- NULL
         set <- function(y) {
