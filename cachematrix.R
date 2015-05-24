@@ -30,18 +30,3 @@ cacheSolve <- function(x, ...) {
         x$setinverse(m)
         m        
 }
-cacheSolve <- function(x=matrix(), ...) {
-    ## Return a matrix that is the inverse of 'x'
-    ##m <- x[2,2] ##$getinverse()
-    m <- x$getinverse()
-    if(!is.null(m)) {
-        message("Get the data from cache")
-        return(m)
-    }
-    ##mtrx <- x[1,2] ##$get()
-    mtrx <- x$get()
-    m <- solve(mtrx)
-    ##x[2,1](m) ##$setinverse(m)
-    x$setinverse(m)
-    m        
-}
